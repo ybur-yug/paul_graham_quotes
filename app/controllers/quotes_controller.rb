@@ -4,7 +4,7 @@ class QuotesController < ApplicationController
   # GET /quotes
   # GET /quotes.json
   def index
-    @quotes = Quote.all
+    @quotes = Quote.all.limit(100)
   end
 
   # GET /quotes/1
