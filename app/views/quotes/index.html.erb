@@ -14,8 +14,7 @@
     <% @quotes.each do |quote| %>
       <tr>
         <td style='margin-top: 10px; margin-bottom: 10px;'><%= quote.body %></td>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
+        <br><br><br><div style='margin-top: 2em;'></div>
         <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
