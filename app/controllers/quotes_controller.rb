@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
   # GET /quotes.json
   def index
     @quotes = Quote.all.to_a.shuffle[0..499]
-    Quote.generate_n_markov_quotes 1500
+    # Quote.generate_n_markov_quotes 1500
   end
 
   # GET /quotes/1
