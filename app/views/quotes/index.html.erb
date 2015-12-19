@@ -1,26 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Quotes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @quotes.each do |quote| %>
-      <tr>
-        <td style='margin-top: 10px; margin-bottom: 10px;'><%= quote.body %></td>
-        <br><br><br><div style='margin-top: 2em;'></div>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Quote', new_quote_path %>
+<% @quotes.each do |quote| %>
+    <%= quote.body %>
+      <br>
+      <br>
+<% end %>
